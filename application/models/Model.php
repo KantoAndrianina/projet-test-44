@@ -4,7 +4,6 @@
     class Model extends CI_Model 
     {
        
-
         public function checkLogin($mail,$pass)
         {
             $valiny = false;
