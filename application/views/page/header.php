@@ -8,23 +8,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/fonts/icomoon/style.css">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/magnific-popup.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/jquery-ui.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/owl.theme.default.min.css">
 
-  <link rel="stylesheet" href="css/lightgallery.min.css">    
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/lightgallery.min.css">    
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/bootstrap-datepicker.css">
 
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/fonts/flaticon/font/flaticon.css">
 
-  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/swiper.css">
 
-  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/aos.css">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css-home/css/style.css">
 
 </head>
 <body>
