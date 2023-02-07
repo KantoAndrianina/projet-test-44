@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 10</title>
+  	<title>Sign Up</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,21 +23,24 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-		      	<h3 class="mb-4 text-center">Have an account?</h3>
+		      	<h3 class="mb-4 text-center">Inscription</h3>
 		      	<form action="#" class="signin-form">
 		      		<div class="form-group">
 		      			<input type="text" class="form-control" placeholder="Username" required>
 		      		</div>
-	            <div class="form-group">
+                      <div class="form-group">
+		      			<input type="text" class="form-control" placeholder="E-mail" required>
+		      		</div>
+                <div class="form-group">
 	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+	              
 	            </div>
-				
 	            <div class="form-group">
-	            	<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+	            	<button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
 	            </div>
-	            
+	           
 	          </form>
-			  <button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
+	        
 		      </div>
 				</div>
 			</div>

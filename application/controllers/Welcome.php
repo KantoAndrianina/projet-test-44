@@ -28,6 +28,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('index');
 		
 	}	
-	
+	public function signUp()
+	{
+		$this->load->view('page/inscription');
+		
+	}	
 	
 }
