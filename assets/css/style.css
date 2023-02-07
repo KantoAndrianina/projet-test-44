@@ -5349,7 +5349,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #007bff !important; }
+  background-color: red !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -8171,7 +8171,7 @@ h1, h2, h3, h4, h5,
   color: #000; }
 
 .bg-primary {
-  background: #fbceb5 !important; }
+  background: red !important; }
 
 .ftco-section {
   padding: 7em 0; }
@@ -8317,9 +8317,9 @@ textarea.form-control {
 
 /* Style the checkmark/indicator */
 .checkbox-primary {
-  color: #fbceb5; }
+  color: white; }
   .checkbox-primary input:checked ~ .checkmark:after {
-    color: #fbceb5; }
+    color: black; }
 
 .btn {
   cursor: pointer;
@@ -8331,9 +8331,9 @@ textarea.form-control {
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #fbceb5 !important;
+    background: black !important;
     border: 1px solid #fbceb5 !important;
-    color: #000 !important; }
+    color: white !important; }
     .btn.btn-primary:hover {
       border: 1px solid #fbceb5;
       background: transparent;
@@ -8344,5 +8344,5 @@ textarea.form-control {
       color: #fbceb5; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
-        background: #fbceb5;
+        background: #b81717;
         color: #fff; }

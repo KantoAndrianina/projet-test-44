@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Login #10</h2>
+					<h2 class="heading-section"></h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -62,9 +62,6 @@
   <script src="<?php echo base_url();?>assets/css/js/popper.js"></script>
   <script src="<?php echo base_url();?>assets/css/js/bootstrap.min.js"></script>
   <script src="<?php echo base_url();?>assets/css/js/main.js"></script>
-
-  <?php echo base_url(); ?>
-
 
 	</body>
 </html>
