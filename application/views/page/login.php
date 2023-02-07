@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css">
 
 	</head>
 	<body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
@@ -58,10 +58,13 @@
 		</div>
 	</section>
 
-	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+	<script src="<?php echo base_url();?>assets/css/js/jquery.min.js"></script>
+  <script src="<?php echo base_url();?>assets/css/js/popper.js"></script>
+  <script src="<?php echo base_url();?>assets/css/js/bootstrap.min.js"></script>
+  <script src="<?php echo base_url();?>assets/css/js/main.js"></script>
+
+  <?php echo base_url(); ?>
+
 
 	</body>
 </html>
