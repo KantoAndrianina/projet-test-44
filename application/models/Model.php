@@ -14,5 +14,17 @@
             }
             return $valiny;
         }
+        public function listeObjet()
+        {   
+            $sql = "select * from objects";
+            $query = $this->db->query($sql);
+            $result = array();
+
+            foreach($query->result_array() as $row)
+            {
+            $result[] = $row;
+            }
+            return $result;
+        }
     }
 ?>
