@@ -41,12 +41,13 @@ INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("FRancko","franck
 INSERT INTO Objects (idObjet,idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,1,"Nike","Lorem ipsum",null,null,null,null,50,"Kiraro");
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Adidas","Lorem ipsum",null,null,null,null,50,"Kiraro");
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"Puma","Lorem ipsum",null,null,null,null,50,"Kiraro");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (4,"Macbook","Lorem ipsum",null,null,null,null,50,"Ordi");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (5,"HP","Lorem ipsum",null,null,null,null,50,"Ordi");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (6,"Toshiba","Lorem ipsum",null,null,null,null,50,"Ordi");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (7,"iphone11","Lorem ipsum",null,null,null,null,50,"telephone");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (8,"iphone12","Lorem ipsum",null,null,null,null,50,"telephone");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (9,"iphone13","Lorem ipsum",null,null,null,null,50,"telephone");
+
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"Macbook","Lorem ipsum",null,null,null,null,50,"Ordi");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"HP","Lorem ipsum",null,null,null,null,50,"Ordi");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"Toshiba","Lorem ipsum",null,null,null,null,50,"Ordi");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iphone11","Lorem ipsum",null,null,null,null,50,"telephone");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"iphone12","Lorem ipsum",null,null,null,null,50,"telephone");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"iphone13","Lorem ipsum",null,null,null,null,50,"telephone");
 
 
 INSERT INTO Echange (idEchange,Obj1,Obj2,etat) VALUES (1,1,3,2);

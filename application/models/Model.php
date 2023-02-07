@@ -15,7 +15,7 @@
         }
         public function listeObjet()
         {   
-            $sql = "select * from objects";
+            $sql = "select * from Objects";
             $query = $this->db->query($sql);
             $result = array();
 
