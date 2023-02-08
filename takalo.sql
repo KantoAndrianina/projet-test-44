@@ -35,14 +35,10 @@ CREATE TABLE Echange(
 
 INSERT INTO Utilisateur (idUtilisateur,nom,Email,mdp,administrateur) VALUES (1,"Karine","karine@gmail.com","12345",0);
 INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("Kanto","kanto@gmail.com","56789",1);
-INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("FRancko","francko@gmail.com","34567",0);
-
-INSERT INTO Objects (idObjet,idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,1,"Nike","Lorem ipsum",null,null,null,null,50,"Kiraro");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Adidas","Lorem ipsum",null,null,null,null,50,"Kiraro");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"Puma","Lorem ipsum",null,null,null,null,50,"Kiraro");
+INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("Francko","francko@gmail.com","34567",0);
 
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"Converse Chuck Taylor","Lorem ipsum","kiraroMain.jpg","kiraro1","kiraro2","kiraro3",50,"Kiraro");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Its end with us","It Ends With Us c'est l'histoire d'amour de Lily et Ryle. Une histoire idyllique qui ferait presque rêvée.","bokyMain.jpg","boky1.jpg","boky2.jpg","boky3.jpg",50,"Boky");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Its end with us","It Ends With Us c'est l'histoire d'amour de Lily et Ryle. Une histoire idyllique qui ferait presque rêvée.","bokyMain.png","boky1.jpg","boky2.jpg","boky3.jpg",50,"Boky");
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"T-shirt Actual","Lorem ipsum","akanjoMain.jpg","akanjo1.jpg","akanjo2.jpg","akanjo3.jpg",50,"Akanjo");
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iPhone 11","Lorem ipsum","phoneMain","phone1","phone2","phone3",50,"Telephone");
 
@@ -53,4 +49,3 @@ select o.idutilisateur, o.idObjet, o.nomobjet, o.descriptions, o.imgMain, o.img1
 from Objects o 
 join Utilisateur u on o.idUtilisateur=u.idUtilisateur
 )
-select * from userObject where idUtilisateur=1
