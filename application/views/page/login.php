@@ -24,12 +24,12 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Have an account?</h3>
-		      	<form action="<?php echo base_url();?>index.php/user/index" class="signin-form">
+		      	<form action="<?php echo base_url();?>index.php/welcome/login" class="signin-form" method="post">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Username" required>
+		      			<input type="text" name="mail" class="form-control" placeholder="Username" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+	              <input id="password-field" name="pass" type="password" class="form-control" placeholder="Password" required>
 	            </div>
 				
 	            <div class="form-group">
