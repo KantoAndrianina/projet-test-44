@@ -33,7 +33,7 @@
        
         public function listeObjet()
         {   
-            $sql = "select * from Objects";
+            $sql = "select * from userObject";
             $query = $this->db->query($sql);
             $result = array();
 
@@ -45,7 +45,7 @@
         }
         public function listeObjetById($id)
         {   
-            $sql = "select * from Objects where idObjet='%s'";
+            $sql = "select * from userObject where idObjet='%s'";
             $sql = sprintf($sql,$id);
             $query = $this->db->query($sql);
             $result = array();
