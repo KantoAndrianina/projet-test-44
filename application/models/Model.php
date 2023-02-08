@@ -56,5 +56,18 @@
             }
             return $result;
         }
+        public function liste($id)
+        {   
+            $sql = "select * from Objects where idObjet='%s'";
+            $sql = sprintf($sql,$id);
+            $query = $this->db->query($sql);
+            $result = array();
+
+            foreach($query->result_array() as $row)
+            {
+            $result[] = $row;
+            }
+            return $result;
+        }
     }
 ?>

@@ -12,14 +12,17 @@
           </div>
           
         </div>
+        <div class="col-lg-4">
         <form action="#">
 
               <div class="row form-group">
                 <div class="col-md-12">
-                <h2 class="mb-3"><?php echo $objet['NomObjet']?></h2>
-                <label class="text-white" for="message"><?php echo $objet['Descriptions']?></label> 
+                <h2 class="text-white"><?php echo $objet['NomObjet']?></h2> 
+                <label class="text-grey" for="message"><?php echo $objet['Descriptions']?></label> 
+                <h4 class="text-white"><?php echo $objet['Prix']?>$</h4>
+
                 <br>
-                  <label class="text-white" for="message">Selectionner un produit</label> 
+                  <label class="text-white" for="message">Selectionner l'un de vos produits</label> 
                   <select id="test" name="marque" cols="30" rows="7" >
                     <option value="#">Iphone</option>
                     <option value="#">Samsung</option>
@@ -36,6 +39,8 @@
 
           </form>
       <?php }}?>
+      </div>
+
     </div>
   </div> 
 
