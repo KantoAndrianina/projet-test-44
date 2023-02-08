@@ -22,11 +22,12 @@
                 <h4 class="text-white"><?php echo $objet['Prix']?>$</h4>
 
                 <br>
-                  <label class="text-white" for="message">Selectionner l'un de vos produits</label> 
+                <label class="text-white" for="message">Selectionner l'un de vos produits</label> 
                   <select id="test" name="marque" cols="30" rows="7" >
-                    <option value="#">Iphone</option>
-                    <option value="#">Samsung</option>
-                    <option value="#">Huawei</option>
+                  <?php if(isset($listeObjetUser)){
+                    foreach ($listeObjetUser as $objetUser) { ?>
+                    <option value="<?php echo $objetUser['idObjet']?>"><?php echo $objetUser['nomobjet']?></option>
+                  <?php }}?>
                   </select>
                 </div>
               </div>

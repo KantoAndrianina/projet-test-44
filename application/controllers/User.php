@@ -19,6 +19,7 @@ class User extends CI_Controller
 	{
 		$data = array();
 		$data['listeObjetById'] = $this->Model->listeObjetById(2);
+		$data['listeObjetUser'] = $this->Model->listeObjetUser(1);
         $data['content'] = 'page/detail';
 		$this->load->view('index',$data);
 	}
