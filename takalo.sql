@@ -34,20 +34,20 @@ CREATE TABLE Echange(
 
 );
 
-INSERT INTO Utilisateur (idUtilisateur,nom,Email,mdp,administrateur) VALUES (1,"Karine","karine@gmail.com","12345",0);
+INSERT INTO Utilisateur (idUtilisateur,nom,Email,mdp,administrateur) VALUES (1,"Karikine","karine@gmail.com","12345",0);
 INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("Kanto","kanto@gmail.com","56789",1);
 INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("FRancko","francko@gmail.com","34567",0);
 
-INSERT INTO Objects (idObjet,idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,1,"Nike","Lorem ipsum",null,null,null,null,50,"Kiraro");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Adidas","Lorem ipsum",null,null,null,null,50,"Kiraro");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"Puma","Lorem ipsum",null,null,null,null,50,"Kiraro");
+INSERT INTO Objects (idObjet,idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,1,"Nike","Lorem ipsum","img_1.jpg",null,null,null,50,"Kiraro");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Adidas","Lorem ipsum","img_2.jpg",null,null,null,150,"Kiraro");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"Puma","Lorem ipsum","img_3.jpg",null,null,null,50,"Kiraro");
 
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"Macbook","Lorem ipsum",null,null,null,null,50,"Ordi");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"HP","Lorem ipsum",null,null,null,null,50,"Ordi");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"Toshiba","Lorem ipsum",null,null,null,null,50,"Ordi");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iphone11","Lorem ipsum",null,null,null,null,50,"telephone");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"iphone12","Lorem ipsum",null,null,null,null,50,"telephone");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"iphone13","Lorem ipsum",null,null,null,null,50,"telephone");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"Macbook","Lorem ipsum","img_4.jpg",null,null,null,50,"Ordi");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"HP","Lorem ipsum","img_5.jpg",null,null,null,50,"Ordi");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"Toshiba","Lorem ipsum","img_6.jpg",null,null,null,50,"Ordi");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iphone11","Lorem ipsum","img_7.jpg",null,null,null,50,"telephone");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"iphone12","Lorem ipsum","img_3.jpg",null,null,null,50,"telephone");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"iphone13","Lorem ipsum","img_4.jpg",null,null,null,50,"telephone");
 
 
 INSERT INTO Echange (idEchange,Obj1,Obj2,etat) VALUES (1,1,3,2);
