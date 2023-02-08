@@ -37,9 +37,21 @@ class Welcome extends CI_Controller {
 		if($this->Model->checkLogin($mail,$pass))
 		{
 			$this->session->set_userdata('mail', $mail);
-			$url=base_url().'index.php/user/index';
-			redirect($url);
+			$_SESSION['mail']=$mail;
+			if($this->Model->checkAdmin($mail))
+			{
+				$url=base_url().'index.php/user/admin';
+				redirect($url);
+			}else{
+				$url=base_url().'index.php/user/index';
+				redirect($url);
+			}
+			
 		}
+	}
+	public function inscri()
+	{
+		$this->load->view('page/inscription');
 	}
 	
 }

@@ -30,6 +30,30 @@
            
             return $valiny;
         }
+        public function getAdmin()
+        {
+            $sql = "select * from Utilisateur where administrateur= 1";
+            $query = $this->db->query($sql);
+            $result = array();
+
+            foreach($query->result_array() as $row)
+            {
+            $result[] = $row;
+            }
+            return $result;
+
+        }
+        public function checkAdmin($mail)
+        {
+            $admin=$this->Model->getAdmin();
+            $valiny = false;
+                if($mail == $admin[0]['email'])
+                {
+                    $valiny = true;
+                }
+           
+            return $valiny;
+        }
        
         public function listeObjet()
         {   
@@ -64,7 +88,7 @@
         {   
             $sql = "select o.idutilisateur, o.idObjet, o.nomobjet, o.descriptions, o.imgMain, o.img1, o.img2, o.img3, o.prix, o.categorie, u.nom, u.email, u.mdp
             from Objects o 
-            join Utilisateur u on o.idUtilisateur=u.idUtilisateur where o.idUtilisateur='%s'";
+            join Utilisateur u on o.idUtilisateur=u.idUtilisateur where u.email='%s'";
             $sql = sprintf($sql,$id);
             $query = $this->db->query($sql);
             $result = array();
@@ -77,10 +101,23 @@
         }
         public function countUser()
         {   
-            $sql = 'select count(idUtilisateur) as User from utilisateur where administrateur= 0';
+            $sql = 'select count(idUtilisateur) as User from Utilisateur where administrateur= 0';
             $query=$this->db->query($sql);
             $row=$query->row_array();
             return $row['User'];
+        }
+        public function getCategorie()
+        {
+            $sql = "select categorie from Objects";
+            $query = $this->db->query($sql);
+            $result = array();
+
+            foreach($query->result_array() as $row)
+            {
+            $result[] = $row;
+            }
+            return $result;
+
         }
 
     }

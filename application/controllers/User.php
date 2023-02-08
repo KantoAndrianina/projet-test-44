@@ -17,10 +17,20 @@ class User extends CI_Controller
 	}
     public function detail()
 	{
+		$idObj=$_GET['id'];
+		// $mail=$_SESSION['mail'];
 		$data = array();
-		$data['listeObjetById'] = $this->Model->listeObjetById(2);
-		$data['listeObjetUser'] = $this->Model->listeObjetUser(1);
+		$data['listeObjetById'] = $this->Model->listeObjetById($idObj);
+		// $data['listeObjetUser'] = $this->Model->listeObjetUser($mail);
         $data['content'] = 'page/detail';
+		$this->load->view('index',$data);
+	}
+	public function admin()
+	{
+		$data = array();
+		$data['getCategorie'] = $this->Model->getCategorie();
+		$data['countUser'] = $this->Model->countUser();
+        $data['content'] = 'page/admin';
 		$this->load->view('index',$data);
 	}
     

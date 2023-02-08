@@ -26,10 +26,9 @@
                 <br>
                 <label class="text-white" for="message">Selectionner l'un de vos produits</label> 
                   <select id="test" name="marque" cols="30" rows="7" >
-                  <?php if(isset($listeObjetUser)){
-                    foreach ($listeObjetUser as $objetUser) { ?>
-                    <option value="<?php echo $objetUser['idObjet']?>"><?php echo $objetUser['nomobjet']?></option>
-                  <?php }}?>
+                  
+                    <option value="">Objet</option>
+                  
                   </select>
                 </div>
               </div>

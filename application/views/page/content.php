@@ -10,7 +10,7 @@
           <div class="image-wrap-2">
             <div class="image-info">
               <h2 class="mb-3"><?php echo $objet['nomobjet']?></h2>
-              <a href="<?php echo base_url();?>index.php/user/detail" class="btn btn-outline-white py-2 px-4">More Photos</a>
+              <a href="<?php echo base_url();?>index.php/user/detail?id=<?php echo $objet['idObjet']?>" class="btn btn-outline-white py-2 px-4">More Photos</a>
             </div>
             <img src="<?php echo base_url();?>assets/images/<?php echo $objet['imgMain']?>" alt="Image" class="img-fluid">
           </div>
