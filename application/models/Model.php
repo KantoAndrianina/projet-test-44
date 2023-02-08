@@ -3,11 +3,16 @@
 
     class Model extends CI_Model 
     {
-        public function GetUser($mail,$pass)
+        public function GetUser()
         {
             $sql = "select * from Utilisateur ";
             $query = $this->db->query($sql);
-            $result = $query->result_array();
+            $result = array();
+
+            foreach($query->result_array() as $row)
+            {
+            $result[] = $row;
+            }
             return $result;
 
         }
@@ -17,7 +22,7 @@
             $listeUser=$this->Model->GetUser();
             $valiny = false;
              for ($i=0;$i<count($listeUser);$i++){
-                if($mail == $listeUser[$i] ['email'] && $pass == $listeUser[$i] ['mdp'])
+                if($listeUser[$i]['email'] == $mail && $listeUser[$i]['mdp']== $pass)
                 {
                     $valiny = true;
                 }
