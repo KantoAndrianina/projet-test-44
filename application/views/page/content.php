@@ -1,4 +1,7 @@
+    
     <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+    <h1 class="mb-3">Liste de tous les objets à échanger</h1>    
+
       <div class="row">
       <?php if(isset($listeObjet))
         {
