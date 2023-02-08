@@ -37,10 +37,10 @@ INSERT INTO Utilisateur (idUtilisateur,nom,Email,mdp,administrateur) VALUES (1,"
 INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("Kanto","kanto@gmail.com","56789",1);
 INSERT INTO Utilisateur (nom,Email,mdp,administrateur) VALUES ("Francko","francko@gmail.com","34567",0);
 
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"Converse Chuck Taylor","Lorem ipsum","kiraroMain.jpg","kiraro1","kiraro2","kiraro3",50,"Kiraro");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"Converse Chuck Taylor","La Chuck Taylor est la basket originale devenue une icône culturelle. Avec cette chaussure, le basket a été présenté comme un sport à prendre au sérieux.","kiraroMain.jpg","kiraro1","kiraro2","kiraro3",50,"Kiraro");
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Its end with us","It Ends With Us c'est l'histoire d'amour de Lily et Ryle. Une histoire idyllique qui ferait presque rêvée.","bokyMain.png","boky1.jpg","boky2.jpg","boky3.jpg",50,"Boky");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"T-shirt Actual","Lorem ipsum","akanjoMain.jpg","akanjo1.jpg","akanjo2.jpg","akanjo3.jpg",50,"Akanjo");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iPhone 11","Lorem ipsum","phoneMain.jpg","phone1","phone2","phone3",50,"Telephone");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"T-shirt Actual","Il saura vous démarquer avec un design étudié, son t-shirt 100% coton, col large tendance fait de ce modèle un atout de style.","akanjoMain.jpg","akanjo1.jpg","akanjo2.jpg","akanjo3.jpg",50,"Akanjo");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iPhone 11","L'iPhone 11 est résistant aux éclaboussures, à l'eau et à la poussière.","phoneMain.jpg","phone1","phone2","phone3",50,"Telephone");
 
 INSERT INTO Echange (idEchange,Obj1,Obj2,etat) VALUES (1,1,3,2);
 
