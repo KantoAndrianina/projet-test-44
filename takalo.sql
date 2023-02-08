@@ -13,7 +13,7 @@ CREATE TABLE Objects(
     idObjet INT(10)  PRIMARY KEY NOT NULL AUTO_INCREMENT,
     idUtilisateur INT(10),
     NomObjet VARCHAR(30),
-    Descriptions VARCHAR(30),
+    Descriptions VARCHAR(200),
     imgMain VARCHAR(30),
     img1 VARCHAR(30),
     img2 VARCHAR(30),
@@ -45,7 +45,7 @@ INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"Converse Chuck Taylor","Lorem ipsum","kiraroMain.jpg","kiraro1","kiraro2","kiraro3",50,"Kiraro");
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (2,"Its end with us","It Ends With Us c'est l'histoire d'amour de Lily et Ryle. Une histoire idyllique qui ferait presque rêvée.","bokyMain.jpg","boky1.jpg","boky2.jpg","boky3.jpg",50,"Boky");
 INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (3,"T-shirt Actual","Lorem ipsum","akanjoMain.jpg","akanjo1.jpg","akanjo2.jpg","akanjo3.jpg",50,"Akanjo");
-INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iPhone 11","Lorem ipsum","phoneMain","phone1","phone2","phone3",50,"Telephone");
+INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,Prix,Categorie) VALUES (1,"iPhone 11","Lorem ipsum","phoneMain.jpg","phone1","phone2","phone3",50,"Telephone");
 
 
 
