@@ -28,17 +28,19 @@ class Welcome extends CI_Controller {
 	{
 		$mail = $this->input->post("mail");
 		$pass = $this->input->post("pass");
-		var_dump($mail);
-		var_dump($pass);
+		// var_dump($mail);
+		// var_dump($pass);
 
 		$this->load->model('Model');
-		var_dump($this->Model->checkLogin($mail,$pass));
+		// var_dump($this->Model->checkLogin($mail,$pass));
 
 		if($this->Model->checkLogin($mail,$pass))
 		{
 			$this->session->set_userdata('mail', $mail);
-			redirect('index.php/user/index');
+			$url=base_url().'index.php/user/index';
+			redirect($url);
 		}
 	}
 	
 }
+?>

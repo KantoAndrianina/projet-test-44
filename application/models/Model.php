@@ -33,7 +33,9 @@
        
         public function listeObjet()
         {   
-            $sql = "select * from userObject";
+            $sql = "select o.idutilisateur, o.idObjet, o.nomobjet, o.descriptions, o.imgMain, o.img1, o.img2, o.img3, o.prix, o.categorie, u.nom, u.email, u.mdp
+            from Objects o 
+            join Utilisateur u on o.idUtilisateur=u.idUtilisateur";
             $query = $this->db->query($sql);
             $result = array();
 
@@ -45,7 +47,9 @@
         }
         public function listeObjetById($id)
         {   
-            $sql = "select * from userObject where idObjet='%s'";
+            $sql = "select o.idutilisateur, o.idObjet, o.nomobjet, o.descriptions, o.imgMain, o.img1, o.img2, o.img3, o.prix, o.categorie, u.nom, u.email, u.mdp
+            from Objects o 
+            join Utilisateur u on o.idUtilisateur=u.idUtilisateur where idObjet='%s'";
             $sql = sprintf($sql,$id);
             $query = $this->db->query($sql);
             $result = array();
@@ -58,7 +62,9 @@
         }
         public function listeObjetUser($id)
         {   
-            $sql = "select * from userObject where idUtilisateur='%s'";
+            $sql = "select o.idutilisateur, o.idObjet, o.nomobjet, o.descriptions, o.imgMain, o.img1, o.img2, o.img3, o.prix, o.categorie, u.nom, u.email, u.mdp
+            from Objects o 
+            join Utilisateur u on o.idUtilisateur=u.idUtilisateur where o.idUtilisateur='%s'";
             $sql = sprintf($sql,$id);
             $query = $this->db->query($sql);
             $result = array();
@@ -71,7 +77,7 @@
         }
         public function countUser()
         {   
-            $sql = 'select count(administrateur) as User from utilisateur where administrateur= 0';
+            $sql = 'select count(idUtilisateur) as User from utilisateur where administrateur= 0';
             $query=$this->db->query($sql);
             $row=$query->row_array();
             return $row['User'];
