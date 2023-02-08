@@ -17,9 +17,11 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                <h2 class="text-white"><?php echo $objet['NomObjet']?></h2> 
-                <label class="text-grey" for="message"><?php echo $objet['Descriptions']?></label> 
-                <h4 class="text-white"><?php echo $objet['Prix']?>$</h4>
+                <h2 class="text-white"><?php echo $objet['nomobjet']?></h2> 
+                <label class="text-grey" for="message"><?php echo $objet['descriptions']?></label> 
+                <h4 class="text-white"><?php echo $objet['prix']?>$</h4>
+                <h5 class="text-white">de <?php echo $objet['nom']?></h5> 
+
 
                 <br>
                 <label class="text-white" for="message">Selectionner l'un de vos produits</label> 
