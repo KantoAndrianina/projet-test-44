@@ -56,9 +56,9 @@
             }
             return $result;
         }
-        public function liste($id)
+        public function listeObjetUser($id)
         {   
-            $sql = "select * from Objects where idObjet='%s'";
+            $sql = "select * from userObject where idUtilisateur='%s'";
             $sql = sprintf($sql,$id);
             $query = $this->db->query($sql);
             $result = array();
