@@ -69,5 +69,13 @@
             }
             return $result;
         }
+        public function countUser()
+        {   
+            $sql = 'select count(administrateur) as User from utilisateur where administrateur= 0';
+            $query=$this->db->query($sql);
+            $row=$query->row_array();
+            return $row['User'];
+        }
+
     }
 ?>
