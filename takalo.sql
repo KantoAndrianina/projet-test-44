@@ -44,3 +44,9 @@ INSERT INTO Objects (idUtilisateur,NomObjet,Descriptions,imgMain,img1,img2,img3,
 
 INSERT INTO Echange (idEchange,Obj1,Obj2,etat) VALUES (1,1,3,2);
 
+create or REPLACE view userObject as(
+select o.idutilisateur, o.idObjet, o.nomobjet, o.descriptions, o.imgMain, o.img1, o.img2, o.img3, o.prix, o.categorie, u.nom, u.email, u.mdp
+from Objects o 
+join Utilisateur u on o.idUtilisateur=u.idUtilisateur
+)
+select * from userObject where idUtilisateur=1
